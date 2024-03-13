@@ -20,12 +20,11 @@ object Main {
             "times" to Type.Function(INTEGER, Type.Function(INTEGER, INTEGER))
         )
 
-//        val example = Expr.Let(
-//            "g",
-//            Expr.Lambda("f", Expr.Identifier("5")),
-//            Expr.Apply(Expr.Identifier("g"), Expr.Identifier("g"))
-//        )
-        val example = Expr.Identifier("true")
+        val example = Expr.Let(
+            "g",
+            Expr.Lambda("f", Expr.Identifier("5")),
+            Expr.Apply(Expr.Identifier("g"), Expr.Identifier("g"))
+        )
 
         Inference.eval(example, env)
     }
