@@ -3,7 +3,7 @@ package fail.kirraobj.hm
 sealed class Type {
 
     // 任意类型, 例如 Int, Bool, etc
-    // 也可以用来表示 PolyMorphism, 此时的变量作为一个 hole, 在 fresh 时实际类型会被代入
+    // 也可以用来表示 PolyMorphism, 此时的变量作为一个 hole
     // 例如 f :: a -> a, f(1) = 1 (此时 f 类型为 Int -> Int)
     class TypeVariable : Type() {
 
