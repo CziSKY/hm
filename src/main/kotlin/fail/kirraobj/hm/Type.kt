@@ -43,4 +43,3 @@ sealed class Type {
 
 val INTEGER = Type.TypeOperator("Int", emptyList())
 val BOOL = Type.TypeOperator("Bool", emptyList())
-val STRING = Type.TypeOperator("String", emptyList())
